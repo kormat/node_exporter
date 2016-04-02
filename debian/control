@@ -1,0 +1,17 @@
+Source: node-exporter
+Section: net
+Priority: extra
+Maintainer: Stephen Shirley <kormat+pkgs@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/prometheus/node_exporter
+
+Package: node-exporter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, adduser
+Description: Prometheus exporter agent for machine metrics
+ The node exporter exposes metrics such as CPU, memory,
+ disk and filesystem usage for collection by Prometheus.
+ .
+ The textfile collector also allows easy exposition of custom
+ metrics.

@@ -1,0 +1,10 @@
+# Defaults for node-exporter initscript
+# sourced by /etc/init.d/node-exporter
+# installed at /etc/default/node-exporter by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# Additional options that are passed to the Daemon.
+DAEMON_ARGS='-log.format logger:syslog?appname=node-exporter&local=7'
